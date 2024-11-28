@@ -11,6 +11,7 @@ import android.os.Bundle
 import android.os.Environment
 import android.provider.MediaStore
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -25,6 +26,20 @@ class ResultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
+
+        // 메인으로 이동
+        val buttonRefresh = findViewById<ImageButton>(R.id.buttonRefresh)
+        buttonRefresh.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            startActivity(intent)
+            finish()
+        }
+        // 통계판으로 이동
+//        val buttonStatistics = findViewById<Button>(R.id.buttonStatistics)
+//        buttonStatistics.setOnClickListener {
+//            startActivity(Intent(this, ResultStatisticActivity::class.java))
+//        }
 
         // MBTI 결과 받기
         val mbtiResult = intent.getStringExtra("MBTI_RESULT") ?: "ENTP"

@@ -5,7 +5,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingBottom="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/buttonRefresh"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end|top"
+            android:layout_margin="16dp"
+            android:background="@drawable/refreshbtn"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/imageView"
@@ -20,18 +37,41 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="#00FFFFFF"
-        android:text="눌러서 이미지 저장하기"
+        android:text="👍 눌러서 이미지 저장하기"
         android:textColor="#000000"
-        android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/buttonLook"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="#3F51B5"
-        android:text="모든 결과 유형 보기"
         android:textSize="24sp"
         android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <Button
+            android:id="@+id/buttonLook"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:backgroundTint="#3F51B5"
+            android:text="모든 결과 유형"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonStatistics"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:backgroundTint="#A9A9A9"
+            android:text="mbti 현황판"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
 </LinearLayout>
