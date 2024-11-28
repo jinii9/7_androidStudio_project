@@ -1,7 +1,9 @@
 package com.zoonmy.animalmbtiapp
 
+import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
+import android.widget.ImageButton
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
@@ -37,6 +39,15 @@ class ResultStatisticActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result_statistic)
+
+        // 메인으로 이동
+        val buttonRefresh = findViewById<ImageButton>(R.id.buttonRefresh)
+        buttonRefresh.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            startActivity(intent)
+            finish()
+        }
 
         // SharedPreferences 초기화
         sharedPreferences = getSharedPreferences("MBTI_STATS", MODE_PRIVATE)

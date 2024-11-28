@@ -14,14 +14,28 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <TextView
-            android:id="@+id/textView"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:text="운명의 동물 현황판"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="2"
+                android:text="운명의 동물 현황판"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/buttonRefresh"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/refreshbtn"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
 
         <!-- 1. 사랑스런 핑크곰 -->
         <LinearLayout
