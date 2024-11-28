@@ -1,5 +1,6 @@
 package com.zoonmy.animalmbtiapp
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -20,21 +21,28 @@ class QuizActivity : AppCompatActivity() {
         "J" to 0, "P" to 0
     )
 
+    enum class Dimension(val label: String) {
+        EI("E/I"),
+        NS("N/S"),
+        TF("T/F"),
+        JP("J/P");
+    }
+
     private val questions = listOf(
-        "어떤 자리에서도 사람들과 잘 어울리는 편이야?" to "E/I",
-        "새로운 사람 만나는 거 좋아해?" to "E/I",
-        "열린 결말의 영화를 좋아해?" to "N/S",
-        "싸울 때 잘잘못을 먼저 따지는 편이야?" to "T/F",
-        "새로운 사람과 대화할 때 말을 많이 하는 편이야?" to "E/I",
-        "너는 상상력이 풍부해?" to "N/S",
-        "주말에 쉬고 있는데 갑자기 친구가 나오라고 하면 나가?" to "E/I",
-        "갑자기 계획 바뀌면 스트레스 받는 편이야?" to "J/P",
-        "일상적인 루틴을 잘 지키는 편이야?" to "J/P",
-        "친구들이랑 대화 중에 '만약에...'라는 질문을 많이 해?" to "N/S",
-        "다른 사람들이 뭐라고 하든, 하고 싶은 거 하는 편이야?" to "T/F",
-        "팀플할 때, 분위기보다는\n효율성과 결과를 더 중요하게 생각해?" to "T/F",
-        "사람들과 함께 있으면 에너지가 더 생긴다고 느껴?" to "E/I",
-        "모든 일을 완벽하게 끝내야 다음으로 넘어가는 편이야?" to "J/P"
+        "어떤 자리에서도 사람들과 잘 어울리는 편이야?" to Dimension.EI,
+        "새로운 사람 만나는 거 좋아해?" to Dimension.EI,
+        "열린 결말의 영화를 좋아해?" to Dimension.NS,
+        "싸울 때 잘잘못을 먼저 따지는 편이야?" to Dimension.TF,
+        "새로운 사람과 대화할 때 말을 많이 하는 편이야?" to Dimension.EI,
+        "너는 상상력이 풍부해?" to Dimension.NS,
+        "주말에 쉬고 있는데 갑자기 친구가 나오라고 하면 나가?" to Dimension.EI,
+        "갑자기 계획 바뀌면 스트레스 받는 편이야?" to Dimension.JP,
+        "일상적인 루틴을 잘 지키는 편이야?" to Dimension.JP,
+        "친구들이랑 대화 중에 '만약에...'라는 질문을 많이 해?" to Dimension.NS,
+        "다른 사람들이 뭐라고 하든, 하고 싶은 거 하는 편이야?" to Dimension.TF,
+        "팀플할 때, 분위기보다는\n효율성과 결과를 더 중요하게 생각해?" to Dimension.TF,
+        "사람들과 함께 있으면 에너지가 더 생긴다고 느껴?" to Dimension.EI,
+        "모든 일을 완벽하게 끝내야 다음으로 넘어가는 편이야?" to Dimension.JP
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -75,7 +83,7 @@ class QuizActivity : AppCompatActivity() {
         if (currentQuestionIndex < questions.size) {
             val (question, _) = questions[currentQuestionIndex]
             textViewQuestion.text = question // 현재 질문 표시
-            textViewProgress.text = "${currentQuestionIndex + 1} / ${questions.size}" // 진행률 표시
+            textViewProgress.text = getString(R.string.progress_text, currentQuestionIndex + 1, questions.size) // 진행률 표시
             progressBar.progress = currentQuestionIndex + 1
         } else {
             showResult() // 모든 질문이 끝난 경우 결과 표시
@@ -85,10 +93,10 @@ class QuizActivity : AppCompatActivity() {
     private fun updateResult(isYes: Boolean) {
         val (_, dimension) = questions[currentQuestionIndex] // 현재 질문의 차원 가져오기
         when (dimension) {
-            "E/I" -> if (isYes) results["E"] = results["E"]!! + 1 else results["I"] = results["I"]!! + 1
-            "N/S" -> if (isYes) results["N"] = results["N"]!! + 1 else results["S"] = results["S"]!! + 1
-            "T/F" -> if (isYes) results["T"] = results["T"]!! + 1 else results["F"] = results["F"]!! + 1
-            "J/P" -> if (isYes) results["J"] = results["J"]!! + 1 else results["P"] = results["P"]!! + 1
+            Dimension.EI -> if (isYes) results["E"] = results["E"]!! + 1 else results["I"] = results["I"]!! + 1
+            Dimension.NS -> if (isYes) results["N"] = results["N"]!! + 1 else results["S"] = results["S"]!! + 1
+            Dimension.TF -> if (isYes) results["T"] = results["T"]!! + 1 else results["F"] = results["F"]!! + 1
+            Dimension.JP -> if (isYes) results["J"] = results["J"]!! + 1 else results["P"] = results["P"]!! + 1
         }
     }
 
