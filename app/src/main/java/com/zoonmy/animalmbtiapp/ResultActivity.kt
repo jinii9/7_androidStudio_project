@@ -43,10 +43,10 @@ class ResultActivity : AppCompatActivity() {
         val buttonStatistics = findViewById<Button>(R.id.buttonStatistics)
         buttonStatistics.setOnClickListener {
             // MBTI 결과값 전달
-            intent.putExtra("MBTI_RESULT", mbtiResult)
-            startActivity(intent)
+            val statsIntent = Intent(this, ResultStatisticActivity::class.java) // 새로운 Intent 생성
+            statsIntent.putExtra("MBTI_RESULT", mbtiResult) // MBTI 결과값 전달
 
-            startActivity(Intent(this, ResultStatisticActivity::class.java))
+            startActivity(statsIntent) // 새 Intent로 Activity 시작
         }
 
 
