@@ -5,6 +5,7 @@
     android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".ResultStatisticActivity">
 
     <LinearLayout
@@ -72,9 +73,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:orientation="horizontal"
+            android:background="@drawable/bg_pastel_coral"
             android:gravity="center"
-            android:background="@drawable/bg_pastel_coral">
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageView2"
@@ -106,8 +107,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:textSize="16sp"
-                    android:text="획득한 사람 수 : 0명" />
+                    android:text="획득한 사람 수 : 0명"
+                    android:textSize="16sp" />
             </LinearLayout>
         </LinearLayout>
 
@@ -116,9 +117,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:orientation="horizontal"
+            android:background="@drawable/bg_pastel_green"
             android:gravity="center"
-            android:background="@drawable/bg_pastel_green">
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -160,9 +161,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:orientation="horizontal"
+            android:background="@drawable/bg_pastel_lavender"
             android:gravity="center"
-            android:background="@drawable/bg_pastel_lavender">
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -204,9 +205,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:orientation="horizontal"
+            android:background="@drawable/bg_pastel_pink"
             android:gravity="center"
-            android:background="@drawable/bg_pastel_pink">
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -248,9 +249,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:orientation="horizontal"
+            android:background="@drawable/bg_pastel_mint"
             android:gravity="center"
-            android:background="@drawable/bg_pastel_mint">
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -292,9 +293,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:orientation="horizontal"
+            android:background="@drawable/bg_pastel_skyblue"
             android:gravity="center"
-            android:background="@drawable/bg_pastel_skyblue">
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -336,9 +337,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:orientation="horizontal"
+            android:background="@drawable/bg_pastel_yellow"
             android:gravity="center"
-            android:background="@drawable/bg_pastel_yellow">
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -380,9 +381,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:orientation="horizontal"
+            android:background="@drawable/bg_pastel_pink"
             android:gravity="center"
-            android:background="@drawable/bg_pastel_pink">
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -424,9 +425,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:orientation="horizontal"
+            android:background="@drawable/bg_pastel_coral"
             android:gravity="center"
-            android:background="@drawable/bg_pastel_coral">
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -468,9 +469,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:orientation="horizontal"
+            android:background="@drawable/bg_gray"
             android:gravity="center"
-            android:background="@drawable/bg_gray">
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -512,9 +513,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:orientation="horizontal"
+            android:background="@drawable/bg_pastel_mint"
             android:gravity="center"
-            android:background="@drawable/bg_pastel_mint">
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -556,9 +557,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:orientation="horizontal"
+            android:background="@drawable/bg_pastel_yellow"
             android:gravity="center"
-            android:background="@drawable/bg_pastel_yellow">
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -600,9 +601,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:orientation="horizontal"
+            android:background="@drawable/bg_pastel_lavender"
             android:gravity="center"
-            android:background="@drawable/bg_pastel_lavender">
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -644,9 +645,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:orientation="horizontal"
+            android:background="@drawable/bg_gom"
             android:gravity="center"
-            android:background="@drawable/bg_gom">
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -688,9 +689,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:orientation="horizontal"
+            android:background="@drawable/bg_pastel_green"
             android:gravity="center"
-            android:background="@drawable/bg_pastel_green">
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageView"
