@@ -15,20 +15,29 @@
         android:id="@+id/progressBar"
         style="@style/Widget.AppCompat.ProgressBar.Horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:progressTint="#F0CFFF" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:gravity="center"
+        android:gravity="center_horizontal"
         android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginVertical="16dp"
+            android:layout_weight="1"
+            android:gravity="center"
             android:text="TextView"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -38,21 +47,35 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginVertical="16dp"
-            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
             android:text="팀플 할 때, 분위기보다는\n효율성과 결과를 더 중요하게 생각해?"
             android:textSize="16sp"
             android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" />
     </LinearLayout>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="응" />
+        android:layout_marginVertical="8dp"
+        android:background="@drawable/quiz_button"
+        android:backgroundTint="#004B90"
+        android:text="응"
+        android:textColor="@color/white" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="아니" />
+        android:layout_marginVertical="8dp"
+        android:background="@drawable/quiz_button"
+        android:backgroundTint="#004B90"
+        android:text="아니"
+        android:textColor="@color/white" />
 </LinearLayout>
