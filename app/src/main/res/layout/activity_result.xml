@@ -12,23 +12,19 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:scaleType="fitXY"
-        android:src="@drawable/gomdori" /><![CDATA[
-
-    />
-
-    ]]>
+        android:src="@drawable/gomdori" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonSave"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="#00FFFFFF"
-        android:text="👍 눌러서 이미지 저장하기"
+        android:text="눌러서 이미지 저장하기"
         android:textColor="#000000"
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonLook"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_marginStart="16dp"
