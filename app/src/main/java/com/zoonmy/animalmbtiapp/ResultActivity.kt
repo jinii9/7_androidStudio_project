@@ -36,10 +36,10 @@ class ResultActivity : AppCompatActivity() {
             finish()
         }
         // 통계판으로 이동
-//        val buttonStatistics = findViewById<Button>(R.id.buttonStatistics)
-//        buttonStatistics.setOnClickListener {
-//            startActivity(Intent(this, ResultStatisticActivity::class.java))
-//        }
+        val buttonStatistics = findViewById<Button>(R.id.buttonStatistics)
+        buttonStatistics.setOnClickListener {
+            startActivity(Intent(this, ResultStatisticActivity::class.java))
+        }
 
         // MBTI 결과 받기
         val mbtiResult = intent.getStringExtra("MBTI_RESULT") ?: "ENTP"
