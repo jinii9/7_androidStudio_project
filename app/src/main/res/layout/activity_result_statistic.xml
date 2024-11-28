@@ -27,8 +27,9 @@
             android:layout_width="match_parent"
             android:layout_height="160dp"
             android:layout_marginBottom="16dp"
-            android:orientation="horizontal"
-            android:background="@drawable/bg_pink">
+            android:background="@drawable/bg_pastel_blue"
+            android:gravity="center"
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageView1"
@@ -39,7 +40,7 @@
 
             <LinearLayout
                 android:layout_width="160dp"
-                android:layout_height="160dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
@@ -60,7 +61,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="획득한 사람 수 : 0명" />
+                    android:text="획득한 사람 수 : 0명"
+                    android:textSize="16sp" />
             </LinearLayout>
 
         </LinearLayout>
@@ -68,10 +70,11 @@
         <!-- 2. 곰도리 -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="160dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:orientation="horizontal"
-            android:background="@drawable/bg_gom">
+            android:gravity="center"
+            android:background="@drawable/bg_pastel_coral">
 
             <ImageView
                 android:id="@+id/imageView2"
@@ -82,7 +85,7 @@
 
             <LinearLayout
                 android:layout_width="160dp"
-                android:layout_height="160dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
@@ -103,6 +106,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:textSize="16sp"
                     android:text="획득한 사람 수 : 0명" />
             </LinearLayout>
         </LinearLayout>
@@ -110,10 +114,11 @@
         <!-- 3. 기대하는 토꺵 -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="160dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:orientation="horizontal"
-            android:background="@drawable/bg_gray">
+            android:gravity="center"
+            android:background="@drawable/bg_pastel_green">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -124,7 +129,7 @@
 
             <LinearLayout
                 android:layout_width="160dp"
-                android:layout_height="160dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
@@ -153,10 +158,11 @@
         <!-- 4. 날아라 하늘다람쥐 -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="160dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:orientation="horizontal"
-            android:background="@drawable/bg_dark_gray">
+            android:gravity="center"
+            android:background="@drawable/bg_pastel_lavender">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -167,7 +173,7 @@
 
             <LinearLayout
                 android:layout_width="160dp"
-                android:layout_height="160dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
@@ -196,10 +202,11 @@
         <!-- 5. 다람지 -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="160dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:orientation="horizontal"
-            android:background="@drawable/bg_brown">
+            android:gravity="center"
+            android:background="@drawable/bg_pastel_pink">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -210,7 +217,7 @@
 
             <LinearLayout
                 android:layout_width="160dp"
-                android:layout_height="160dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
@@ -239,10 +246,11 @@
         <!-- 6. 댕댕이 -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="160dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:orientation="horizontal"
-            android:background="@drawable/bg_blue">
+            android:gravity="center"
+            android:background="@drawable/bg_pastel_mint">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -253,7 +261,7 @@
 
             <LinearLayout
                 android:layout_width="160dp"
-                android:layout_height="160dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
@@ -282,10 +290,11 @@
         <!-- 7. 마이웨이 고먀미 -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="160dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:orientation="horizontal"
-            android:background="@drawable/bg_gray">
+            android:gravity="center"
+            android:background="@drawable/bg_pastel_skyblue">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -296,7 +305,7 @@
 
             <LinearLayout
                 android:layout_width="160dp"
-                android:layout_height="160dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
@@ -325,10 +334,11 @@
         <!-- 8. 뾰족한 고슴도치 -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="160dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:orientation="horizontal"
-            android:background="@drawable/bg_brown">
+            android:gravity="center"
+            android:background="@drawable/bg_pastel_yellow">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -339,7 +349,7 @@
 
             <LinearLayout
                 android:layout_width="160dp"
-                android:layout_height="160dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
@@ -368,10 +378,11 @@
         <!-- 9. 소심한 고영이 -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="160dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:orientation="horizontal"
-            android:background="@drawable/bg_dark_gray">
+            android:gravity="center"
+            android:background="@drawable/bg_pastel_pink">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -382,7 +393,7 @@
 
             <LinearLayout
                 android:layout_width="160dp"
-                android:layout_height="160dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
@@ -411,10 +422,11 @@
         <!-- 10. 스껄한 영우 -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="160dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:orientation="horizontal"
-            android:background="@drawable/bg_fox">
+            android:gravity="center"
+            android:background="@drawable/bg_pastel_coral">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -425,7 +437,7 @@
 
             <LinearLayout
                 android:layout_width="160dp"
-                android:layout_height="160dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
@@ -454,9 +466,10 @@
         <!-- 11. 시고르자브종 -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="160dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:orientation="horizontal"
+            android:gravity="center"
             android:background="@drawable/bg_gray">
 
             <ImageView
@@ -468,7 +481,7 @@
 
             <LinearLayout
                 android:layout_width="160dp"
-                android:layout_height="160dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
@@ -497,10 +510,11 @@
         <!-- 12. 시크한 여우 -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="160dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:orientation="horizontal"
-            android:background="@drawable/bg_dark_gray">
+            android:gravity="center"
+            android:background="@drawable/bg_pastel_mint">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -511,7 +525,7 @@
 
             <LinearLayout
                 android:layout_width="160dp"
-                android:layout_height="160dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
@@ -540,10 +554,11 @@
         <!-- 13. 인싸 너구리 -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="160dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:orientation="horizontal"
-            android:background="@drawable/bg_brown">
+            android:gravity="center"
+            android:background="@drawable/bg_pastel_yellow">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -554,7 +569,7 @@
 
             <LinearLayout
                 android:layout_width="160dp"
-                android:layout_height="160dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
@@ -583,10 +598,11 @@
         <!-- 14. 킹왕짱 호랑이 -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="160dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:orientation="horizontal"
-            android:background="@drawable/bg_fox">
+            android:gravity="center"
+            android:background="@drawable/bg_pastel_lavender">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -597,7 +613,7 @@
 
             <LinearLayout
                 android:layout_width="160dp"
-                android:layout_height="160dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
@@ -626,9 +642,10 @@
         <!-- 15. 행복한 쿼카 -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="160dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:orientation="horizontal"
+            android:gravity="center"
             android:background="@drawable/bg_gom">
 
             <ImageView
@@ -640,7 +657,7 @@
 
             <LinearLayout
                 android:layout_width="160dp"
-                android:layout_height="160dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
@@ -669,10 +686,11 @@
         <!-- 16. 행복한 햄햄 -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="160dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:orientation="horizontal"
-            android:background="@drawable/bg_brown">
+            android:gravity="center"
+            android:background="@drawable/bg_pastel_green">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -683,7 +701,7 @@
 
             <LinearLayout
                 android:layout_width="160dp"
-                android:layout_height="160dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
