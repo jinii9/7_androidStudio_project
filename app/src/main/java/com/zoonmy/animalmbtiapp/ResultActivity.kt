@@ -27,6 +27,10 @@ class ResultActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
 
+        // MBTI 결과 받기
+        val mbtiResult = intent.getStringExtra("MBTI_RESULT") ?: "ENTP"
+        val imageView = findViewById<ImageView>(R.id.imageView)
+
         // 메인으로 이동
         val buttonRefresh = findViewById<ImageButton>(R.id.buttonRefresh)
         buttonRefresh.setOnClickListener {
@@ -38,12 +42,13 @@ class ResultActivity : AppCompatActivity() {
         // 통계판으로 이동
         val buttonStatistics = findViewById<Button>(R.id.buttonStatistics)
         buttonStatistics.setOnClickListener {
+            // MBTI 결과값 전달
+            intent.putExtra("MBTI_RESULT", mbtiResult)
+            startActivity(intent)
+
             startActivity(Intent(this, ResultStatisticActivity::class.java))
         }
 
-        // MBTI 결과 받기
-        val mbtiResult = intent.getStringExtra("MBTI_RESULT") ?: "ENTP"
-        val imageView = findViewById<ImageView>(R.id.imageView)
 
         // MBTI 결과에 따라 이미지 설정
         val imageResource = when(mbtiResult) {
