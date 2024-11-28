@@ -13,6 +13,7 @@ import android.provider.MediaStore
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
@@ -30,6 +31,10 @@ class ResultActivity : AppCompatActivity() {
         // MBTI 결과 받기
         val mbtiResult = intent.getStringExtra("MBTI_RESULT") ?: "ENTP"
         val imageView = findViewById<ImageView>(R.id.imageView)
+
+        // MBTI
+        var textViewMbti = findViewById<TextView>(R.id.textViewMbti)
+        textViewMbti.text = mbtiResult
 
         // 메인으로 이동
         val buttonRefresh = findViewById<ImageButton>(R.id.buttonRefresh)
