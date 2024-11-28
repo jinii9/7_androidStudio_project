@@ -35,7 +35,7 @@
                 android:layout_width="160dp"
                 android:layout_height="160dp"
                 android:layout_weight="1"
-                android:src="@drawable/pink_bear_profile" />
+                android:src="@drawable/enfj_cha" />
 
             <LinearLayout
                 android:layout_width="160dp"
@@ -78,7 +78,7 @@
                 android:layout_width="160dp"
                 android:layout_height="160dp"
                 android:layout_weight="1"
-                android:src="@drawable/gomdori_profile" />
+                android:src="@drawable/istj_cha" />
 
             <LinearLayout
                 android:layout_width="160dp"
@@ -120,7 +120,7 @@
                 android:layout_width="160dp"
                 android:layout_height="160dp"
                 android:layout_weight="1"
-                android:src="@drawable/expecting_toggang_profile" />
+                android:src="@drawable/infj_cha" />
 
             <LinearLayout
                 android:layout_width="160dp"
@@ -163,7 +163,7 @@
                 android:layout_width="160dp"
                 android:layout_height="160dp"
                 android:layout_weight="1"
-                android:src="@drawable/flyting_sq_profile" />
+                android:src="@drawable/entp_cha" />
 
             <LinearLayout
                 android:layout_width="160dp"
@@ -206,7 +206,7 @@
                 android:layout_width="160dp"
                 android:layout_height="160dp"
                 android:layout_weight="1"
-                android:src="@drawable/daramg_profile" />
+                android:src="@drawable/isfp_cha" />
 
             <LinearLayout
                 android:layout_width="160dp"
@@ -249,7 +249,7 @@
                 android:layout_width="160dp"
                 android:layout_height="160dp"
                 android:layout_weight="1"
-                android:src="@drawable/dangdang_profile" />
+                android:src="@drawable/isfj_cha" />
 
             <LinearLayout
                 android:layout_width="160dp"
@@ -292,7 +292,7 @@
                 android:layout_width="160dp"
                 android:layout_height="160dp"
                 android:layout_weight="1"
-                android:src="@drawable/myway_cat_profile" />
+                android:src="@drawable/estj_cha" />
 
             <LinearLayout
                 android:layout_width="160dp"
@@ -335,7 +335,7 @@
                 android:layout_width="160dp"
                 android:layout_height="160dp"
                 android:layout_weight="1"
-                android:src="@drawable/sharp_go_profile" />
+                android:src="@drawable/estp_cha" />
 
             <LinearLayout
                 android:layout_width="160dp"
@@ -378,7 +378,7 @@
                 android:layout_width="160dp"
                 android:layout_height="160dp"
                 android:layout_weight="1"
-                android:src="@drawable/sosim_go_profile" />
+                android:src="@drawable/infp_cha" />
 
             <LinearLayout
                 android:layout_width="160dp"
@@ -421,7 +421,7 @@
                 android:layout_width="160dp"
                 android:layout_height="160dp"
                 android:layout_weight="1"
-                android:src="@drawable/skur_fox_profile" />
+                android:src="@drawable/istp_cha" />
 
             <LinearLayout
                 android:layout_width="160dp"
@@ -464,7 +464,7 @@
                 android:layout_width="160dp"
                 android:layout_height="160dp"
                 android:layout_weight="1"
-                android:src="@drawable/sigor_profile" />
+                android:src="@drawable/intp_cha" />
 
             <LinearLayout
                 android:layout_width="160dp"
@@ -507,7 +507,7 @@
                 android:layout_width="160dp"
                 android:layout_height="160dp"
                 android:layout_weight="1"
-                android:src="@drawable/sik_cat_profile" />
+                android:src="@drawable/intj_cha" />
 
             <LinearLayout
                 android:layout_width="160dp"
@@ -550,7 +550,7 @@
                 android:layout_width="160dp"
                 android:layout_height="160dp"
                 android:layout_weight="1"
-                android:src="@drawable/inssa_ngr_profile" />
+                android:src="@drawable/esfp_cha" />
 
             <LinearLayout
                 android:layout_width="160dp"
@@ -593,7 +593,7 @@
                 android:layout_width="160dp"
                 android:layout_height="160dp"
                 android:layout_weight="1"
-                android:src="@drawable/king_tiger_profile" />
+                android:src="@drawable/entj_cha" />
 
             <LinearLayout
                 android:layout_width="160dp"
@@ -636,7 +636,7 @@
                 android:layout_width="160dp"
                 android:layout_height="160dp"
                 android:layout_weight="1"
-                android:src="@drawable/happy_kk_profile" />
+                android:src="@drawable/enfp_cha" />
 
             <LinearLayout
                 android:layout_width="160dp"
@@ -679,7 +679,7 @@
                 android:layout_width="160dp"
                 android:layout_height="160dp"
                 android:layout_weight="1"
-                android:src="@drawable/happy_hh_profile" />
+                android:src="@drawable/esfj_cha" />
 
             <LinearLayout
                 android:layout_width="160dp"
