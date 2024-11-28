@@ -215,7 +215,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/isfpTextView"
+                    android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -226,7 +226,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/esfpTextView"
+                    android:id="@+id/isfpTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -322,7 +322,7 @@
 
         </LinearLayout>
 
-        <!-- 8 번째 동물 카드 -->
+        <!-- 8. 뾰족한 고슴도치 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="160dp"
@@ -473,7 +473,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/intpTextView"
+                    android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -484,7 +484,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/esfpTextView"
+                    android:id="@+id/intpTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
