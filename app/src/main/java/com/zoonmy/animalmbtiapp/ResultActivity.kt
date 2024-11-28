@@ -26,6 +26,34 @@ class ResultActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
 
+        // MBTI 결과 받기
+        val mbtiResult = intent.getStringExtra("MBTI_RESULT") ?: "ENTP"
+        val imageView = findViewById<ImageView>(R.id.imageView)
+
+        // MBTI 결과에 따라 이미지 설정
+        val imageResource = when(mbtiResult) {
+            "ISTJ" -> R.drawable.istj
+            "ISFJ" -> R.drawable.isfj
+            "INFJ" -> R.drawable.infj
+            "INTJ" -> R.drawable.intj
+            "ISTP" -> R.drawable.istp
+            "ISFP" -> R.drawable.isfp
+            "INFP" -> R.drawable.infp
+            "INTP" -> R.drawable.intp
+            "ESTP" -> R.drawable.estp
+            "ESFP" -> R.drawable.esfp
+            "ENFP" -> R.drawable.enfp
+            "ENTP" -> R.drawable.entp
+            "ESTJ" -> R.drawable.estj
+            "ESFJ" -> R.drawable.esfj
+            "ENFJ" -> R.drawable.enfj
+            "ENTJ" -> R.drawable.entj
+            else -> R.drawable.entp
+        }
+        // 이미지 설정
+        imageView.setImageResource(imageResource)
+
+
         // 모든 결과 유형 보기
         val buttonLook = findViewById<Button>(R.id.buttonLook)
         buttonLook.setOnClickListener {
