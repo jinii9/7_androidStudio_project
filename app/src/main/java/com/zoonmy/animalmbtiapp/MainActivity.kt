@@ -31,5 +31,6 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, QuizActivity::class.java)
             getResult.launch(intent) // QuizActivity 실행
         }
+
     }
 }
