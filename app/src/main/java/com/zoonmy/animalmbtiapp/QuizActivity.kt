@@ -29,20 +29,20 @@ class QuizActivity : AppCompatActivity() {
     }
 
     private val questions = listOf(
-        "어떤 자리에서도 사람들과 잘 어울리는 편이야?" to Dimension.EI,
+        "어떤 자리에서도 사람들과 \n잘 어울리는 편이야?" to Dimension.EI,
         "새로운 사람 만나는 거 좋아해?" to Dimension.EI,
         "열린 결말의 영화를 좋아해?" to Dimension.NS,
         "싸울 때 잘잘못을 먼저 따지는 편이야?" to Dimension.TF,
-        "새로운 사람과 대화할 때 말을 많이 하는 편이야?" to Dimension.EI,
+        "새로운 사람과 대화할 때\n 말을 많이 하는 편이야?" to Dimension.EI,
         "너는 상상력이 풍부해?" to Dimension.NS,
-        "주말에 쉬고 있는데 갑자기 친구가 나오라고 하면 나가?" to Dimension.EI,
-        "갑자기 계획 바뀌면 스트레스 받는 편이야?" to Dimension.JP,
+        "주말에 쉬고 있는데 갑자기\n 친구가 나오라고 하면 나가?" to Dimension.EI,
+        "갑자기 계획 바뀌면 \n스트레스 받는 편이야?" to Dimension.JP,
         "일상적인 루틴을 잘 지키는 편이야?" to Dimension.JP,
         "친구들이랑 대화 중에 '만약에...'라는 질문을 많이 해?" to Dimension.NS,
         "다른 사람들이 뭐라고 하든, 하고 싶은 거 하는 편이야?" to Dimension.TF,
         "팀플할 때, 분위기보다는\n효율성과 결과를 더 중요하게 생각해?" to Dimension.TF,
-        "사람들과 함께 있으면 에너지가 더 생긴다고 느껴?" to Dimension.EI,
-        "모든 일을 완벽하게 끝내야 다음으로 넘어가는 편이야?" to Dimension.JP
+        "사람들과 함께 있으면\n 에너지가 더 생긴다고 느껴?" to Dimension.EI,
+        "모든 일을 완벽하게 끝내야 \n다음으로 넘어가는 편이야?" to Dimension.JP
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
