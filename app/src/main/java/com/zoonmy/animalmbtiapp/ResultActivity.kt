@@ -11,6 +11,7 @@ import android.os.Bundle
 import android.os.Environment
 import android.provider.MediaStore
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -25,6 +26,48 @@ class ResultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
+
+        // 메인으로 이동
+        val buttonRefresh = findViewById<ImageButton>(R.id.buttonRefresh)
+        buttonRefresh.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            startActivity(intent)
+            finish()
+        }
+        // 통계판으로 이동
+//        val buttonStatistics = findViewById<Button>(R.id.buttonStatistics)
+//        buttonStatistics.setOnClickListener {
+//            startActivity(Intent(this, ResultStatisticActivity::class.java))
+//        }
+
+        // MBTI 결과 받기
+        val mbtiResult = intent.getStringExtra("MBTI_RESULT") ?: "ENTP"
+        val imageView = findViewById<ImageView>(R.id.imageView)
+
+        // MBTI 결과에 따라 이미지 설정
+        val imageResource = when(mbtiResult) {
+            "ISTJ" -> R.drawable.istj
+            "ISFJ" -> R.drawable.isfj
+            "INFJ" -> R.drawable.infj
+            "INTJ" -> R.drawable.intj
+            "ISTP" -> R.drawable.istp
+            "ISFP" -> R.drawable.isfp
+            "INFP" -> R.drawable.infp
+            "INTP" -> R.drawable.intp
+            "ESTP" -> R.drawable.estp
+            "ESFP" -> R.drawable.esfp
+            "ENFP" -> R.drawable.enfp
+            "ENTP" -> R.drawable.entp
+            "ESTJ" -> R.drawable.estj
+            "ESFJ" -> R.drawable.esfj
+            "ENFJ" -> R.drawable.enfj
+            "ENTJ" -> R.drawable.entj
+            else -> R.drawable.entp
+        }
+        // 이미지 설정
+        imageView.setImageResource(imageResource)
+
 
         // 모든 결과 유형 보기
         val buttonLook = findViewById<Button>(R.id.buttonLook)
